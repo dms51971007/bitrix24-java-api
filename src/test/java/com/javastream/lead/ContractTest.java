@@ -23,8 +23,8 @@ public class ContractTest {
     @DisplayName("ContractService.getContactById()")
     @Test
     void testGetContactById() {
-        Contact contact = client.contactService().get(2);
+        Contact contact = client.contactService().get(1113);
 
-        assertEquals(2, contact.getId());
+        assertEquals(1113, contact.getId());
     }
 }

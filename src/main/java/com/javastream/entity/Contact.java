@@ -139,6 +139,6 @@ public class Contact {
     private List<Website> websites;
 
     @SerializedName("UF_CRM_1665262344992")
-    private List<Website> pAgrointegrator;
+    private String pAgrointegrator;
 
 }
