@@ -155,4 +155,8 @@ public class Company {
 
     @SerializedName("WEB")
     private List<Website> websites;
+
+    @SerializedName("UF_CRM_1650443084")
+    private String districtId;
+
 }
