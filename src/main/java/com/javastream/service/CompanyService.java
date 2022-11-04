@@ -47,7 +47,9 @@ public class CompanyService {
         JSONObject jsonMain = PushRunner.get(params, GET_METHOD);
         JSONObject jsonResult = jsonMain.getJSONObject("result");
         Gson gson = new Gson();
-        return gson.fromJson(jsonResult.toString(), Company.class);
+        Company company = gson.fromJson(jsonResult.toString(), Company.class);
+        company.setJsonObject(jsonResult);
+        return company;
     }
 
     public void delete(Integer idCompany) {

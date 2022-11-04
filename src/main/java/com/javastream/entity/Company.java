@@ -7,6 +7,7 @@ import com.javastream.entity.model.Phone;
 import com.javastream.entity.model.Website;
 import lombok.Data;
 import lombok.ToString;
+import org.json.JSONObject;
 
 import java.util.List;
 
@@ -158,5 +159,7 @@ public class Company {
 
     @SerializedName("UF_CRM_1650443084")
     private String districtId;
+
+    private JSONObject jsonObject;
 
 }

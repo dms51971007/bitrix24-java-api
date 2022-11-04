@@ -23,8 +23,8 @@ public class CompanyTest {
     @DisplayName("CompanyService.getCompanyById()")
     @Test
     void testGetCompanyById() {
-        Company company = client.companyService().get(2);
+        Company company = client.companyService().get(3973);
 
-        assertEquals(2, company.getId());
+        assertEquals(3973, company.getId());
     }
 }
